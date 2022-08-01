@@ -1,0 +1,44 @@
+/* Work-list */
+.works {
+    padding: 0px 0px 94px;
+}
+
+.work-set {
+    display: flex;
+}
+
+.work-set__item {
+    position: relative;
+
+    .work-set &+& {
+        margin-left: 30px;
+    }
+
+    &::before {
+        content: "";
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+.work-set__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    position: absolute;
+    left: 86px;
+    bottom: 27px;
+    color: $secondary-text-color;
+}
+
+.work-set__pic {
+    display: block;
+}

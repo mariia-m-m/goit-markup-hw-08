@@ -1,0 +1,71 @@
+$primary-text-colour: #212121;
+$title-text-color: #212121;
+$text-color: #757575;
+$accent-color: #2196F3;
+$secondary-text-color: #ffffff;
+$primary-background-color: #ffffff;
+$background-color-dark: #2F303A;
+$background-color-button: #F5F4FA;
+$border-color-header: #ECECEC;
+$background-color-border-image-portfolio: #EEEEEE;
+$color-icons-not-hover: #AFB1B8;
+
+
+body {
+    background-color: $primary-background-color;
+    color: $primary-text-colour;
+    letter-spacing: 0.03em;
+    font-family:'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    color: $primary-text-colour;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.list {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text {
+    margin-top: 0;
+}
