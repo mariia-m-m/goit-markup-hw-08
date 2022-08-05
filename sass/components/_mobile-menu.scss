@@ -1,0 +1,48 @@
+.menu-button {
+    display: inline-flex;
+    margin:0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    // margin-left: 276px;
+
+    @media screen and (min-width: 480px) {
+        justify-content: space-between;}
+
+&.is-open .icon-close {
+        display: block;}
+
+&.is-open .icon-menu {
+    display: none;}
+
+        & .icon-close {
+            display: none;
+        }
+}
+
+
+.menu-container{
+   
+
+    @media screen and (min-width:480px){
+        display: none;
+        position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: $primary-background-color;
+            &.is-open {
+                    display: block;
+                }
+    }
+         @media screen and (min-width:480px){
+            // display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+         }
+   
+
+}
+
+
+

@@ -7,7 +7,8 @@ header {
 .main-nav {
     display: flex;
     align-items: center;
-}
+justify-content: space-between;}
+
 
 
 .site-nav {
@@ -41,8 +42,7 @@ header {
     &:hover,
     &:focus {
         color: $accent-color;
-    }
-}
+    }}
 
 
 
@@ -116,4 +116,7 @@ header {
     .header-contacts__link:focus & {
         fill: $accent-color;
     }
+}
+.page-header{
+        position: relative;
 }

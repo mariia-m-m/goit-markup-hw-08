@@ -9,7 +9,13 @@
     background-size: cover;
     background-attachment: scroll;
     background-size: 1600px auto;
-}
+
+@media screen and (min-width: 480px){
+background-size: cover;
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;}}
+    
 
 .hero__title {
     color: $secondary-text-color;
@@ -21,6 +27,12 @@
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 30px;
+
+    @media screen and (min-width:480px) {
+font-size: 26px;
+line-height: 1.61;
+margin-bottom: 30px;
+    }
 }
 
 .button {
@@ -39,4 +51,8 @@
     margin-bottom: 0px;
     margin-top: 0px;
     min-width: 200px;
+
+    @media screen and (min-width: 480px) {
+        
+    }
 }

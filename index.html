@@ -18,30 +18,49 @@
             <div class="main-nav">
             <div class="logo">
         <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
+            </div>
 
-    <ul class="site-nav list">
+        <button type="button" class="menu-button is-open"  data-menu-button aria-expanded="false">
+            <svg  
+            width="40"; 
+            height="40"; 
+            aria-label="Перелючатель мобильного меню";
+            aria-controls="menu-container">
+                <use class="icon-close" href="./images/icons.svg#close"></use>
+                <use class="icon-menu" href="./images/icons.svg#menu"></use>
+               
+            </svg>
+        </button>
+        <div class="menu-container is-open" data-menu id="menu-container">
+            <div class="navigation">
+        <ul class="site-nav-menu list">
             <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link--current">Студия</a></li>
             <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
         </ul>
         </div>
-
-        <ul class="header-contacts list">
-            <li class="header-contacts__item">
-                <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                <svg class="header-contacts__mail-icon" width="16" height="12">
+            <div class="contacts">
+<ul class="header-contacts-menu list">
+    <li class="header-contacts__item">
+        <a href="mailto:info@devstudio.com" class="header-contacts__link">
+            <svg class="header-contacts__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-           
-                info@devstudio.com</a>
-            </li>
-            <li class="header-contacts__item">
-                <a href="tel:+380961111111" class=header-contacts__link>
-                <svg class="header-contacts__telephone-icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a></li>
-        </ul>
+
+            info@devstudio.com</a>
+    </li>
+    <li class="header-contacts__item">
+        <a href="tel:+380961111111" class=header-contacts__link>
+            <svg class="header-contacts__telephone-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+    </li>
+</ul>
+            </div>
+        </div>
+
+
         </div>
         </div>
     </header>
@@ -50,8 +69,8 @@
 <main>
     <!-- Hero -->
 <section class="hero">
-<h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-<button type="button" class="button" data-modal-open>Заказать услугу</button>
+<h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
+<button type="button" class="button" data-modal-open>Замовити послугу</button>
     </section>
 
     <!-- Features -->
@@ -65,8 +84,8 @@
                     <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
             </div>
-            <h3 class="features__title">Внимание к деталям</h3>
-            <p class="features__text text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="features__title">Увага до деталей</h3>
+            <p class="features__text text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="features__item">
                 <div class="features__card">
@@ -129,7 +148,7 @@
             <li class="command-set__item">
                 <img src="./images/igor.jpg" alt="Парень в очках" width="270" class="command-set__photo">
                 <div class="command-set__card">
-                    <h3 class="command-set__name">Игорь Демьяненко</h3>
+                    <h3 class="command-set__name">Ігор Дем'яненко</h3>
                 <p class="command-set__profession text">Product Designer</p>
                 <ul class="social-icons">
                     <li class="social-icons__item list">
@@ -277,7 +296,7 @@
     <!-- Постоянные клиенты -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Постоянные клиенты</h2>
+            <h2 class="section-title">Постійні клієнти</h2>
             <ul class="clients list">
 <li class="clients__item">
     <a href="#" class="clients__link">
@@ -472,6 +491,8 @@
 </div>
 <script src="./js/modal.js">
 
+</script>
+<script src="./js/menu.js">
 </script>
 </body>
 </html>
