@@ -6,19 +6,20 @@
 
 .footer-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0;
     align-items: baseline;
     margin: 0;
+ 
 }
 
-.footer-block {
-    margin-right: 70px;
+// .footer-block {
+//     margin-right: 70px;
 
     .footer-content & {
         display: inline-block;
     }
-}
 
 .address-box {
     width: 231px;
