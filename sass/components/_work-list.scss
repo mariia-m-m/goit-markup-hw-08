@@ -1,10 +1,7 @@
 /* Work-list */
 .works {
-    padding: 0px 0px 94px;
-    @media screen and (min-width: 480px) {
-    display: none;
-    }
-}
+@media screen and (max-width:1200px) {
+    display: none;}}
 
 .work-set {
     display: flex;
@@ -15,9 +12,9 @@
 
     .work-set &+& {
         margin-left: 30px;
-    }
+    }}
 
-    &::before {
+    .work-set__item::before {
         content: "";
         background-color: rgba(47, 48, 58, 0.8);
         width: 100%;
@@ -25,7 +22,7 @@
         position: absolute;
         bottom: 0;
     }
-}
+
 
 
 .work-set__name {
