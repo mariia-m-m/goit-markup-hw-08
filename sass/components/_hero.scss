@@ -16,7 +16,7 @@ $hero-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.
     background-size: 1600px auto;
 height: 600px; ;}
 
-@media(min-device-pixel-ratio:2),(min-resolution:2dpp),(min-resolution:2dpi){
+@media(min-device-pixel-ratio:2),(min-resolution:2dpp),(min-resolution:192dpi){
     background-image: $hero-image-gradient,url(//images/Шапка@2x.jpg);
 }
 }
