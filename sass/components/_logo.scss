@@ -4,6 +4,7 @@
     justify-content: center;
 }
 
+
 .logo__link,
 .logo-footer {
     color: #000000;
@@ -13,6 +14,7 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 0px;
        
 
 @media screen and (min-width:480px){
@@ -39,9 +41,13 @@ letter-spacing: 0.03em;
 .page-footer-logo {
     margin-bottom: 20px;
     text-decoration: none;
+ 
+
 }
 .page-footer-logo_logo{
 margin-bottom: 20px;
 text-decoration: none;
-display: block;
+display: flex;
+justify-content: center;
+align-items: center;
 }
