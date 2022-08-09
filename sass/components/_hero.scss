@@ -1,7 +1,8 @@
 $hero-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 .hero {
     text-align: center;
-    background-image:$hero-image-gradient, url(../images/hero\ image.jpg);
+    background-image: $hero-image-gradient,
+            url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,11 +17,42 @@ $hero-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.
     background-size: 1600px auto;
 height: 600px; ;}
 
-@media(min-device-pixel-ratio:2),(min-resolution:2dpp),(min-resolution:192dpi){
-    background-image: $hero-image-gradient,url(//images/Шапка@2x.jpg);
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){.hero{
+    background-image: $hero-image-gradient,url(../images/hero-image@2x.jpg);
+}}
+@media screen and (min-width: 480px) {
+    .hero{
+        background-image: $hero-image-gradient,
+            url(../images/hero-image@2x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero{
+            background-image: $hero-image-gradient,
+                url(../images/hero-image@2x.jpg);
+        }
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .hero{
+        background-image: $hero-image-gradient,
+            url(../images/hero-image@2x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero{
+            background-image: $hero-image-gradient,
+                url(../images/hero-image@2x.jpg);
+        }
+    }
 }
-    
 
 .hero__title {
 
@@ -56,9 +88,4 @@ margin-bottom: 30px;
     border: 1px solid transparent;
     margin-bottom: 0px;
     margin-top: 0px;
-    min-width: 200px;
-
-    @media screen and (min-width: 480px) {
-        
-    }
-}
+    min-width: 200px;}}

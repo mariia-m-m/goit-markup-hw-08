@@ -15,89 +15,98 @@
 <body class="page">
 <!-- Шапка сайта -->
 <header class="page-header">
+    <div class="container">
 
-    <!-- Desktop Menu -->
+        <!-- Desktop Menu -->
 
-    <div class="main-nav-desktop">
-        <div class="logo">
-            <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
-        </div>
-        <ul class="site-nav list">
-            <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link--current">Портфолио</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-        </ul>
-
-        <ul class="header-contacts list">
-            <li class="header-contacts__item">
-                <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                    <svg class="header-contacts__mail-icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-
-                    info@devstudio.com</a>
-            </li>
-            <li class="header-contacts__item">
-                <a href="tel:+380961111111" class=header-contacts__link>
-                    <svg class="header-contacts__telephone-icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Mobile Menu -->
-
-    <div class="header-mobile">
-        <div class="logo">
-            <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
-        </div>
-
-        <button type="button" class="menu-button is-open" data-mobile-menu-open aria-expanded="false">
-            <svg width="40" ; height="40" ; aria-label="Перелючатель мобильного меню" ; aria-controls="menu-container">
-                <use class="icon-menu" href="./images/icons.svg#menu"></use>
-            </svg>
-        </button>
-
-        <div class="main-nav-mobile is-hidden" data-mobile-menu>
-
-            <button type="button" class="menu-button" data-mobile-menu-close aria-expanded="false">
-                <svg width="40" ; height="40" ; aria-label="Перелючатель мобильного меню" ;
-                    aria-controls="menu-container">
-                    <use class="icon-close" href="./images/icons.svg#close"></use>
-                </svg>
-            </button>
-
-            <ul class="site-nav-mobile list">
-                <li class="site-nav__item"><a href="index.html" class="site-nav-mobile__link-current">Студия</a>
-                </li>
-                <li class="site-nav__item"><a href="portfolio.html" class="site-nav-mobile__link">Портфолио</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav-mobile__link">Контакты</a></li>
+        <div class="main-nav-desktop">
+            <div class="logo">
+                <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
+            </div>
+            <ul class="site-nav list">
+                <li class="site-nav__item"><a href="index.html"
+                        class=" site-nav__link site-nav__link">Студия</a></li>
+                <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link--current">Портфолио</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
 
-            <ul class="header-contacts-mobile list">
+            <ul class="header-contacts list">
                 <li class="header-contacts__item">
-                    <a href="tel:+380961111111" class="header-contacts-mobile__link-tel">
-                        <svg class="header-contacts__telephone-icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-                <li class="header-contacts__item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts-mobile__link-mail">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link">
                         <svg class="header-contacts__mail-icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
 
                         info@devstudio.com</a>
                 </li>
-
+                <li class="header-contacts__item">
+                    <a href="tel:+380961111111" class=header-contacts__link>
+                        <svg class="header-contacts__telephone-icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
-    </div>
 
+        <!-- Mobile Menu -->
+
+        <div class="header-mobile">
+            <div class="logo">
+                <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
+            </div>
+
+            <button type="button" class="menu-button is-open" data-mobile-menu-open aria-expanded="false">
+                <svg width="40" ; height="40" ; aria-label="Перелючатель мобильного меню" ; aria-controls="mobile-menu">
+                    <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <div class="main-nav-mobile is-hidden" data-mobile-menu>
+
+                <button type="button" class="menu-button-close" data-mobile-menu-close aria-expanded="false">
+                    <svg width="40" ; height="40" ; aria-label="Перелючатель мобильного меню" ;
+                        aria-controls="mobile-menu">
+                        <use class="icon-close" href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="site-nav-mobile list">
+                    <li class="site-nav__item-mobile"><a href="index.html" class="site-nav-mobile__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item-mobile"><a href="portfolio.html"
+                            class="site-nav-mobile__link">Портфолио</a></li>
+                    <li class="site-nav__item-mobile"><a href="" class="site-nav-mobile__link">Контакты</a></li>
+                </ul>
+                <div class="mobile-contacts">
+                    <ul class="header-contacts-mobile list">
+                        <li class="header-contacts-mobile__item">
+                            <a href="tel:+380961111111" class="header-contacts-mobile__link-tel">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="header-contacts-mobile__item">
+                            <a href="mailto:info@devstudio.com" class="header-contacts-mobile__link-mail">
+
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="social-networks">
+                        <li class="social-networks-item">
+                            <a href="#" class="social-networks-link instagram">Instagram</a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a href="#" class="social-networks-link">Twitter</a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a href="#" class="social-networks-link">Facebook</a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a href="#" class="social-networks-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
     <!-- main content -->
     <main>
@@ -119,8 +128,15 @@
             <li class="products__item">
                 <div class="card list">
                     <div class="card-top">
-                    <img src="./images/web-up.jpg" alt="Ноутбук" width="370" height="294"
-                        class="card-top__image">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/web-up.jpg 1x, ./images/web-up@2x.jpg 2x" type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/web-up.jpg 1x, ./images/web-up@2x.jpg 2x" type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/web-up.jpg 1x, ./images/web-up@2x.jpg 2x" type="image/jpg" />
+                            <img src="./images/web-up.jpg" class="card-top__image" alt="Экран ноутбука с сайтом" width="450" />
+                        </picture>
                         <div class="card-overlay">
                             <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения о компании или частном лице.</p>
@@ -135,8 +151,13 @@
             <li class="products__item">
                 <div class="card list">
                     <div class="card-top">
-                    <img src="./images/design-up.jpg" alt="Два баскетболиста" width="370"
-                        height="294" class="card-top__image">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/design-up.jpg 1x, ./images/design-up@2x.jpg 2x" type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="./images/design-up.jpg 1x, ./images/design-up@2x.jpg 2x" type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="./images/design-up.jpg 1x, ./images/design-up@2x.jpg 2x" type="image/jpg" />
+                        <img src="./images/design-up.jpg" alt="Два баскетболиста" width="450" class="card-top__image">
+                        </picture>
+  
                         <div class="card-overlay">
                             <p></p>
                         </div>
@@ -150,8 +171,15 @@
             <li class="products__item">
                 <div  class="card list">
                     <div class="card-top">
-                    <img src="./images/app-up.jpg" alt="Рыба" width="370" height="294"
-                        class="card-top__image">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/app-up.jpg 1x, ./images/app-up@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="./images/app-up.jpg 1x, ./images/app-up@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="./images/app-up.jpg 1x, ./images/app-up@2x.jpg 2x"
+                                type="image/jpg" />
+                    <img src="./images/app-up.jpg" alt="Рыба" width="450" class="card-top__image">
+                        </picture>
                         <div class="card-overlay">
                             <p></p>
                         </div>
@@ -165,8 +193,12 @@
             <li class="products__item">
                 <div class="card list">
                 <div class="card-top">
-                <img src="./images/marketing-middle.jpg" alt="Наушники" width="370"
-                        height="294" class="card-top__image">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/marketing-middle.jpg 1x, ./images/marketing-middle@2x.jpg 2x" type="image/jpg" />
+                        <source media="(min-width: 768px)" srcset="./images/marketing-middle.jpg 1x, ./images/marketing-middle@2x.jpg 2x" type="image/jpg" />
+                        <source media="(max-width: 767px)" srcset="./images/marketing-middle.jpg 1x, ./images/marketing-middle@2x.jpg 2x" type="image/jpg" />
+                <img src="./images/marketing-middle.jpg" alt="Наушники" width="450" class="card-top__image">
+                    </picture>
                         <div class="card-overlay">
                             <p></p>
                         </div>
@@ -180,9 +212,13 @@
             <li class="products__item">
                 <div  class="card list">
                     <div class="card-top">
-                    <img src="./images/app-middle.jpg" alt="Две коробки" width="370"
-                        height="294" class="card-top__image">
-                        <div class="card-overlay">
+                    <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/app-middle.jpg 1x, ./images/app-middle@2x.jpg 2x" type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="./images/app-middle.jpg 1x, ./images/app-middle@2x.jpg 2x" type="image/jpg" />
+                    <source media="(max-width: 767px)" srcset="./images/app-middle.jpg 1x, ./images/app-middle@2x.jpg 2x" type="image/jpg" />
+                    <img src="./images/app-middle.jpg" alt="Две коробки" width="450" class="card-top__image">
+                    </picture>    
+                    <div class="card-overlay">
                             <p></p>
                         </div>
                         </div>
@@ -195,8 +231,12 @@
             <li class="products__item">
                 <div  class="card list">
                 <div class="card-top">
-                <img src="./images/web-middle.jpg" alt="Экран" width="370"
-                        height="294" class="card-top__image">
+                    <picture>
+    <source media="(min-width: 1200px)" srcset="./images/web-middle.jpg 1x, ./images/web-middle@2x.jpg 2x" type="image/jpg" />
+    <source media="(min-width: 768px)" srcset="./images/web-middle.jpg 1x, ./images/web-middle@2x.jpg 2x" type="image/jpg" />
+    <source media="(max-width: 767px)" srcset="./images/web-middle.jpg 1x, ./images/web-middle@2x.jpg 2x" type="image/jpg" />
+    <img src="./images/web-middle.jpg" alt="Экран" width="450"  class="card-top__image">
+                    </picture>
                         <div class="card-overlay">
                             <p></p>
                         </div>
@@ -210,8 +250,12 @@
             <li class="products__item">
                 <div class="card list">
                     <div class="card-top">
-                    <img src="./images/design-down.jpg" alt="Журнал" width="370"
-                        height="294" class="card-top__image">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="./images/design-down.jpg 1x, ./images/design-down@2x.jpg 2x" type="image/jpg" />
+        <source media="(min-width: 768px)" srcset="./images/design-down.jpg 1x, ./images/design-down@2x.jpg 2x" type="image/jpg" />
+        <source media="(max-width: 767px)" srcset="./images/design-down.jpg 1x, ./images/design-down@2x.jpg 2x" type="image/jpg" />
+        <img src="./images/design-down.jpg" alt="Журнал" width="450" class="card-top__image">
+        </picture>
                         <div class="card-overlay">
                             <p></p>
                         </div>
@@ -225,9 +269,16 @@
             <li class="products__item">
                 <div class="card list">
                 <div class="card-top">
-                <img src="./images/marketing-down.jpg" alt="Бирка с логотипом"
-                        width="370" height="294" class="card-top__image">
-                        <div class="card-overlay">
+                    <picture>
+                <source media="(min-width: 1200px)" srcset="./images/marketing-down.jpg 1x, ./images/marketing-down@2x.jpg 2x"
+                    type="image/jpg" />
+                <source media="(min-width: 768px)" srcset="./images/marketing-down.jpg 1x, ./images/marketing-down@2x.jpg 2x"
+                    type="image/jpg" />
+                <source media="(max-width: 767px)" srcset="./images/marketing-down.jpg 1x, ./images/marketing-down@2x.jpg 2x"
+                    type="image/jpg" />
+                <img src="./images/marketing-down.jpg" alt="Бирка с логотипом" width="450" class="card-top__image">
+                </picture>        
+                <div class="card-overlay">
                             <p></p>
                         </div>
                         </div>
@@ -240,9 +291,16 @@
             <li class="products__item">
                 <div class="card list">
                     <div class="card-top">
-                    <img src="./images/app-down.jpg" alt="Руки и ноутбук" width="370"
-                        height="294" class="card-top__image">
-                        <div class="card-overlay">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/app-down.jpg 1x, ./images/app-down@2x.jpg 2x"
+                    type="image/jpg" />
+                <source media="(min-width: 768px)" srcset="./images/app-down.jpg 1x, ./images/app-down@2x.jpg 2x"
+                    type="image/jpg" />
+                <source media="(max-width: 767px)" srcset="./images/app-down.jpg 1x, ./images/app-down@2x.jpg 2x"
+                    type="image/jpg" />
+                    <img src="./images/app-down.jpg" alt="Руки и ноутбук" width="450" class="card-top__image">
+            </picture>    
+                    <div class="card-overlay">
                             <p></p>
                         </div>
                         </div>

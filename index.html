@@ -23,7 +23,7 @@
                 <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
             </div>
             <ul class="site-nav list">
-                <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link">Студия</a></li>
+                <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link--current">Студия</a></li>
                 <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
@@ -116,7 +116,7 @@
     <!-- Features -->
 <section class="features-basis">
         <div class="container">
-        <h2 class="section-title visually-hidden">Наши преимущества</h2>
+        <h2 class="section-title visually-hidden">Наші переваги</h2>
         <ul class="features list">
             <li class="features__item">
                 <div class="features__card">
@@ -162,22 +162,30 @@
     <!-- Чем занимаемся-->
     <section class="section works">
         <div class="container">
-        <h2 class="section-title">Чем мы занимаемся</h2>
+        <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="work-set list">
             <li class="work-set__item">
                 <img class="work-set__pic" 
-                srcset="./images/box1@2x 2x" 
+                srcset="./images/box1@2x.jpg" 
                 src="./images/box1.jpg"
                 alt="Планшет и клавиатура на столе"
                 width="370">
             <span class="work-set__name">Десктопные приложения</span>
             </li>
             <li class="work-set__item">
-                <img src="./images/box2.jpg" alt="Ноутбук на столе" width="370"class="work-set__pic">
+                <img class="work-set__pic"
+                srcset="./images/box2.jpg"
+                src="./images/box2.jpg" 
+                alt="Ноутбук на столе" 
+                width="370">
                 <span class="work-set__name">Мобильные приложения</span>
             </li>
             <li class="work-set__item">
-                <img src="./images/box3.jpg" alt="Планшет в руках" width="370"class="work-set__pic">
+                <img class="work-set__pic"
+                srcset="./images/box3.jpg"
+                src="./images/box3.jpg" 
+                alt="Планшет в руках" 
+                width="370">
                 <span class="work-set__name">Дизайнерские решения</span>
             </li>
         </ul>
@@ -191,7 +199,20 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="command-set list">
             <li class="command-set__item">
-                <img src="./images/igor.jpg" alt="Парень в очках" width="270" class="command-set__photo">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                        type="image/jpg" />
+                    <source media="(min-width: 768px)"
+                        srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                        type="image/jpg" />
+                    <source media="(max-width: 767px)"
+                        srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                        type="image/jpg" />
+                        <img src="./images/igor.jpg" alt="Парень в очках" width="270" class="command-set__photo">
+                    <!-- <img src="./images/team-members/mobile/member1.jpg" alt="Игорь Демьяненко" width="450" loading="lazy" /> -->
+                </picture>
+             
                 <div class="command-set__card">
                     <h3 class="command-set__name">Ігор Дем'яненко</h3>
                 <p class="command-set__profession text">Product Designer</p>
@@ -228,7 +249,12 @@
             </li>
     
 <li class="command-set__item">
-    <img src="./images/olga.jpg" alt="Парень в очках" width="270" class="command-set__photo">
+    <picture>
+        <source media="(min-width: 1200px)" srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x" type="image/jpg" />
+        <source media="(min-width: 768px)" srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x" type="image/jpg" />
+        <source media="(max-width: 767px)" srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x" type="image/jpg" />
+    <img src="./images/olga.jpg" alt="Дівчина" width="270" class="command-set__photo">
+    </picture>
     <div class="command-set__card">
         <h3 class="command-set__name">Ольга Репина</h3>
         <p class="command-set__profession text">Frontend Developer</p>
@@ -264,7 +290,12 @@
         </ul>
 </li>
 <li class="command-set__item">
-    <img src="./images/nikolay.jpg" alt="Парень в очках" width="270" class="command-set__photo">
+    <picture>
+        <source media="(min-width: 1200px)" srcset="./images/nikolay.jpg 1x, ./images/nikolay@2x.jpg 2x" type="image/jpg" />
+        <source media="(min-width: 768px)" srcset="./images/nikolay.jpg 1x, ./images/nikolay@2x.jpg 2x" type="image/jpg" />
+        <source media="(max-width: 767px)" srcset="./images/nikolay.jpg 1x, ./images/nikolay@2x.jpg 2x" type="image/jpg" />
+    <img src="./images/nikolay.jpg" alt="Парубок посміхається" width="270" class="command-set__photo">
+    </picture>
     <div class="command-set__card">
         <h3 class="command-set__name">Николай Тарасов</h3>
         <p class="command-set__profession text">Marketing</p>
@@ -300,7 +331,12 @@
         </ul>
 </li>
     <li class="command-set__item">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x" type="image/jpg" />
+        <source media="(min-width: 768px)" srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x" type="image/jpg" />
+        <source media="(max-width: 767px)" srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x" type="image/jpg" />
         <img src="./images/mihail.jpg" alt="Парень в очках" width="270" class="command-set__photo">
+        </picture>
         <div class="command-set__card">
             <h3 class="command-set__name">Михаил Ермаков</h3>
             <p class="command-set__profession text">UI Designer</p>
