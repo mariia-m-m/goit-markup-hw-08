@@ -23,7 +23,7 @@
                 <a href="index.html" class="logo__link"><span class="logo__text">Web</span>Studio</a>
             </div>
             <ul class="site-nav list">
-                <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link--current">Студия</a></li>
+                <li class="site-nav__item"><a href="index.html" class=" site-nav__link site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
@@ -68,29 +68,38 @@
                     </svg>
                 </button>
                 <ul class="site-nav-mobile list">
-                    <li class="site-nav__item"><a href="index.html" class="site-nav-mobile__link-current">Студия</a>
+                    <li class="site-nav__item-mobile"><a href="index.html" class="site-nav-mobile__link">Студия</a>
                     </li>
-                    <li class="site-nav__item"><a href="portfolio.html" class="site-nav-mobile__link">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav-mobile__link">Контакты</a></li>
+                    <li class="site-nav__item-mobile"><a href="portfolio.html" class="site-nav-mobile__link">Портфолио</a></li>
+                    <li class="site-nav__item-mobile"><a href="" class="site-nav-mobile__link">Контакты</a></li>
                 </ul>
-                
+                <div class="mobile-contacts">
                 <ul class="header-contacts-mobile list">
-                    <li class="header-contacts__item">
+                    <li class="header-contacts-mobile__item">
                         <a href="tel:+380961111111" class="header-contacts-mobile__link-tel">
-                            <svg class="header-contacts__telephone-icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
                             +38 096 111 11 11</a>
                     </li>
-                    <li class="header-contacts__item">
+                    <li class="header-contacts-mobile__item">
                         <a href="mailto:info@devstudio.com" class="header-contacts-mobile__link-mail">
-                            <svg class="header-contacts__mail-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
                 
                             info@devstudio.com</a>
                     </li>
                 </ul>
+                <ul class="social-networks">
+                    <li class="social-networks-item">
+                        <a href="#" class="social-networks-link instagram">Instagram</a>
+                    </li>
+                    <li class="social-networks-item">
+                        <a href="#" class="social-networks-link">Twitter</a>
+                    </li>
+                    <li class="social-networks-item">
+                        <a href="#" class="social-networks-link">Facebook</a>
+                    </li>
+                    <li class="social-networks-item">
+                        <a href="#" class="social-networks-link">LinkedIn</a>
+                    </li>
+                </ul>
+                </div>
             </div>
         </div>
         </div>
@@ -496,7 +505,7 @@
             </div>
             <div class="form-field">
             <label for="email" class="form-label">Почта</label>
-            <input type="email" class="form-input-1" name="email" id="email" placeholder=" ">
+            <input type="email" class="form-input" name="email" id="email" placeholder=" ">
                 <svg class="modal-icon" aria-hidden="true">
                     <use href="./images/icons.svg#email-modal">
                     </use>
@@ -517,7 +526,7 @@
                 <use href="./images/icons.svg#vector"></use>
             </svg>
            
-            <label for="policy" class="label-policy">Соглашаюсь с рассылкой и принимаю <a class="contract">Условия договора</a>
+            <label for="policy" class="label-policy">Погоджуюся з розсилкою та приймаю<a class="contract">Умови договору</a>
             </label>
     </div>
             <button type="submit" class="button-send"> Отправить
