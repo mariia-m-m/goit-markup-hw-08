@@ -493,7 +493,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .site-nav__link--current::after {
-    top: 60px;
+    top: 47px;
   }
 }
 .site-nav__link--current .site-nav__link--current:hover::after {
