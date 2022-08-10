@@ -1,18 +1,8 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+ 
     background-color: $background-color-dark;
     position: relative;
-    @media screen and (min-width:1200px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-        padding-top: 52px;
-        padding-left: 15px;
-        padding-bottom: 0;
-        padding: 52px 0 52px;
-    }
+   
 }
 
 .footer-content {
@@ -44,9 +34,6 @@
 
 .address-footer {
     margin-bottom: 8px;
-}
-
-address {
     font-style: normal;
 }
 
@@ -56,9 +43,11 @@ address {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
+    white-space: nowrap;
 
 
     &:hover,
@@ -166,7 +155,7 @@ address {
         display: flex;
         margin-right: 70px;
         align-items: flex-start;
-        margin-left: 15px;
+        margin-left: 0;
     }
 }
 
@@ -204,6 +193,7 @@ address {
 
     @media screen and (min-width:1200px) {
         margin-right: auto;
+        margin-top: 12px;
 
     }
 }
@@ -218,9 +208,9 @@ address {
     left: 0;
 
     @media screen and (min-width:1200px) {
-        flex-direction: row;
         justify-content: left;
         margin-left: 93px;
+            margin-top: 12px;
     }
 }
 
@@ -235,7 +225,7 @@ address {
     align-items: center;
 }
 
-.container__footer-container {
+.footer-container {
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: row;
@@ -278,10 +268,11 @@ address {
         margin-right: 15px;
         width: 200px;
         height: 50px;
-        margin-top: 100px;
+        margin-top: 48px;
 
     }
 }
+
 
 .input-footer {
 
@@ -302,14 +293,15 @@ address {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 20px;
 
+    &:focus {
+            outline: none;
+        }
+
     @media screen and (min-width:1200px) {
         max-width: 354px;
     }
 
-    &:focus {
-        outline: none;
-    }
-
+   
 
     @media screen and(min-width:480px) {
         min-width: 358px;
@@ -328,7 +320,6 @@ address {
     text-transform: uppercase;
     color: $secondary-text-color;
     text-align: center;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 
@@ -338,6 +329,7 @@ address {
     }
 
 }
+
 
 
 .icon-send {
@@ -351,4 +343,31 @@ address {
     margin-right: 0px;
     padding: 0px;
 }
+.label-footer {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    left: 16px;
+    top: 15px;
 
+    .input-footer:focus+& {
+        visibility: hidden;
+    }
+}
+
+.footer-field {
+    position: relative;
+    // margin-left: 93px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer-thumb{
+    @media screen and (min-width:1200px) {
+    flex-direction: row;
+    display: flex;
+        padding-bottom: 0;
+}}
