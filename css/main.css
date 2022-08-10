@@ -307,12 +307,12 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -2066,18 +2066,16 @@ input[type=checkbox] {
 
 .card-top__image {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 @media screen and (min-width: 480px) {
   .card-top__image {
-    min-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .card-top__image {
-    min-width: 100%;
-    height: auto;
+    width: 354px;
   }
 }
 
@@ -2240,12 +2238,28 @@ picture {
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  padding: 48px 0px 48px 32px;
+  padding: 48px 83px 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+}
+
+.main-nav-mobile.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-contacts {
   margin-top: auto;
 }
+
 .site-nav-mobile__link {
   font-family: "Roboto";
   font-style: normal;
@@ -2260,7 +2274,7 @@ picture {
 }
 
 .header-contacts-mobile {
-  margin-top: 200px;
+  margin-top: auto;
 }
 
 .header-contacts-mobile__link-tel {
