@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
  <link rel="stylesheet" href="./css/main.min.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -427,7 +428,6 @@
     </main>
 <!-- footer -->
 <footer class="footer">
-    <div class="section">
     <div class="container">
         <div class="footer-thumb">
         <div class="footer-contacts">
@@ -498,17 +498,21 @@
                 <label for="email" class="label-footer">
                 </label>
             </div>
-    </div>
+            </form>
+            <div class="button-subscribe">
+
     <button type="submit" class="button-footer">
         <span class="text-button-send">Підписатись</span>
         <svg class="icon-send">
             <use href="./images/icons.svg#send"></use>
         </svg>
     </button>
-    </form>
+    </div>
+   
+ 
     </div>
     </div>
-</section>
+  
 </footer>
 <!-- Modal -->
 <div class="backdrop is-hidden" data-modal>
@@ -520,7 +524,7 @@
             </svg>
         </button>
         <form class="form">
-            <h3 class="recall">Залиште свої контакти, ми вам зателефонуємо</h3>
+            <h3 class="recall">Залиште свої контакти, ми вам передзвонимо</h3>
         <div class="form-field">
             <label for="name" class="form-label">Имя</label>
             <input type="text" class="form-input" name="name" id="name" placeholder=" ">
