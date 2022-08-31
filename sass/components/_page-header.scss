@@ -12,13 +12,9 @@ header {
     display: flex;
         align-items: center;
         justify-content: space-between;
-            padding-top: 21px;
-            padding-bottom: 21px;
-} 
-@media screen and (min-width: 1200px) {
-        padding-top: 24px;
-        padding-bottom: 25px;
-}}
+            padding-top: 15px;
+            padding-bottom: 15px;
+} }
 
 .main-nav-mobile{
     position: fixed;
@@ -88,10 +84,10 @@ header {
         display: block;
         left: 0;
         bottom: 0;
-        top: 56px;
+        top: 45px;
     
     @media screen and (min-width:1200px) {
-        top: 47px;
+        top: 37px;
     }}
     
 
@@ -130,12 +126,15 @@ header {
     &:focus {
         color: $accent-color;}}
 
-.header-contacts__item:not(nth:last-child){
-    @media screen and (min-width:768px) {
+.header-contacts__item:not(:last-child){
+    @media screen and (min-width:768px) and (max-width:1200px) {
         margin-bottom: 10px;
         margin-left: 0;
     }
 }
+.header-contacts__item{
+    margin-bottom: 0;
+    }
 
 
 
