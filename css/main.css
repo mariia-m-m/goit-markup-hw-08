@@ -1510,6 +1510,8 @@ header {
 }
 @media screen and (min-width: 768px) {
   .footer-thumb {
+    padding-left: 76px;
+    padding-right: 76px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1533,22 +1535,6 @@ header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-}
-
-.input-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.form-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .hero {
